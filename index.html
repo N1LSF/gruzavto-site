@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ГРУЗАВТО — Магазин грузовых автозапчастей</title>
+  <meta name="description" content="ГРУЗАВТО — магазин грузовых автозапчастей в г. Нижняя Тура и Качканар. Быстро привезём, точно подберём. КАМАЗ, МАЗ, Урал, УАЗ, ГАЗ.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Inter:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="nav-header" id="nav-header">
+
+    <!-- Верхняя строка: логотип + контакт + кнопка -->
+    <div class="nav-topbar">
+      <div class="container nav-topbar-inner">
+        <a href="#hero" class="nav-logo">ГРУЗ<span>АВТО</span></a>
+        <div class="nav-topbar-info">
+          <span class="nav-topbar-loc">г. Нижняя Тура · г. Качканар</span>
+          <a href="tel:+79193624471" class="nav-topbar-phone">+7 (919) 362-44-71</a>
+        </div>
+        <a href="tel:+79193624471" class="btn btn-primary btn-sm nav-topbar-cta">Позвонить</a>
+      </div>
+    </div>
+
+    <!-- Нижняя строка: навигационные ссылки -->
+    <nav class="nav-bar">
+      <div class="container nav-bar-inner">
+        <button class="burger" id="burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#availability" class="nav-link">Наличие</a></li>
+          <li><a href="#order" class="nav-link">Заказ</a></li>
+          <li><a href="#contract" class="nav-link">Договор</a></li>
+          <li><a href="#brands" class="nav-link">Марки</a></li>
+          <li><a href="#about" class="nav-link">О нас</a></li>
+          <li><a href="#directions" class="nav-link">Схема проезда</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="container hero-layout">
+
+      <!-- Левая колонка — текст -->
+      <div class="hero-text">
+        <div class="hero-eyebrow">Магазин грузовых автозапчастей</div>
+        <h1 class="hero-title">ГРУЗАВТО</h1>
+        <p class="hero-slogan">Быстро привезём, точно подберём</p>
+        <div class="hero-brands">
+          <span class="hero-brand-tag">КАМАЗ</span>
+          <span class="hero-brand-tag">МАЗ</span>
+          <span class="hero-brand-tag">Урал</span>
+          <span class="hero-brand-tag">УАЗ</span>
+          <span class="hero-brand-tag">ГАЗ</span>
+        </div>
+        <div class="hero-cta">
+          <a href="tel:+79193624471" class="btn btn-primary btn-lg">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            +7 (919) 362-44-71
+          </a>
+        </div>
+      </div>
+
+      <!-- Правая колонка — фото -->
+      <div class="hero-image">
+        <img src="images/image.png" alt="Грузовые автомобили КАМАЗ МАЗ Урал"
+             onerror="this.parentElement.classList.add('hero-img-placeholder')">
+        <div class="hero-img-placeholder-text">
+          <svg width="56" height="56" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg>
+          <p>Добавьте фото грузовиков<br><small>images/hero-trucks.jpg</small></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== НАЛИЧИЕ ===== -->
+  <section class="section section-medium" id="availability">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Быстрый ответ</div>
+        <h2 class="section-title">Уточните наличие<br>автозапчастей</h2>
+        <p class="section-sub">Пишите или звоните — ответим быстро</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-card reveal-up delay-1">
+          <div class="contact-card-city">
+            <div class="city-icon">
+              <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            </div>
+            <div>
+              <div class="city-label">г. Нижняя Тура</div>
+              <div class="city-address">Малышева, 13</div>
+            </div>
+          </div>
+          <div class="contact-buttons">
+            <a href="https://max.ru/u/f9LHodD0cOKFVbpw6TfSzIv_1p9dmQWYkxbe87RYJzcwBHFuoGFqae9gKU4" class="contact-btn contact-btn-max" target="_blank" rel="noopener">
+              <img src="images/Логотип_MAX.svg" alt="MAX" class="max-logo-icon">
+              MAX
+            </a>
+            <a href="tel:+79221562542" class="contact-btn contact-btn-phone">
+              <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              +7 (922) 156-25-42
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-card reveal-up delay-2">
+          <div class="contact-card-city">
+            <div class="city-icon">
+              <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            </div>
+            <div>
+              <div class="city-label">г. Качканар</div>
+              <div class="city-address">Крылова, д. 8 (автовокзал)</div>
+            </div>
+          </div>
+          <div class="contact-buttons">
+            <a href="https://max.ru/u/f9LHodD0cOKFVbpw6TfSzIv_1p9dmQWYkxbe87RYJzcwBHFuoGFqae9gKU4" class="contact-btn contact-btn-max" target="_blank" rel="noopener">
+              <img src="images/Логотип_MAX.svg" alt="MAX" class="max-logo-icon">
+              MAX
+            </a>
+            <a href="tel:+79655384103" class="contact-btn contact-btn-phone">
+              <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              +7 (965) 538-41-03
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ЗАКАЗ ===== -->
+  <section class="section section-light" id="order">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Оформление</div>
+        <h2 class="section-title">Закажите<br>автозапчасти</h2>
+        <p class="section-sub">Пишите или звоните — оформим быстро</p>
+      </div>
+
+      <div class="order-grid">
+        <a href="mailto:gruzavto_nt@mail.ru" class="order-card reveal-up delay-1">
+          <div class="order-icon order-icon-email">
+            <svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+          </div>
+          <div class="order-label">Email</div>
+          <div class="order-value">gruzavto_nt@mail.ru</div>
+          <div class="order-action">Написать письмо →</div>
+        </a>
+
+        <a href="https://max.ru/u/f9LHodD0cOKFVbpw6TfSzIv_1p9dmQWYkxbe87RYJzcwBHFuoGFqae9gKU4" class="order-card reveal-up delay-2" target="_blank" rel="noopener">
+          <div class="order-icon order-icon-max">
+            <img src="images/Логотип_MAX.svg" alt="MAX" class="max-logo-icon" width="36" height="36">
+          </div>
+          <div class="order-label">MAX</div>
+          <div class="order-value">+7 (919) 362-44-71</div>
+          <div class="order-action">Написать в MAX →</div>
+        </a>
+
+        <a href="tel:+79193624471" class="order-card reveal-up delay-3">
+          <div class="order-icon order-icon-phone">
+            <svg width="36" height="36" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          </div>
+          <div class="order-label">Телефон</div>
+          <div class="order-value">+7 (919) 362-44-71</div>
+          <div class="order-action">Позвонить →</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ДОГОВОР ===== -->
+  <section class="section section-medium" id="contract">
+    <div class="container">
+      <div class="contract-layout">
+        <div class="contract-content">
+          <div class="section-tag reveal-up">Оптовым клиентам</div>
+          <h2 class="section-title reveal-up delay-1">Заключите<br>с нами договор</h2>
+          <p class="contract-intro reveal-up delay-2">Мы продаём запчасти не только в розницу, но и оптом.</p>
+
+          <ul class="contract-list">
+            <li class="contract-item reveal-up delay-2">
+              <div class="contract-check">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              </div>
+              <span>Наш готовый шаблон договора или рассмотрим ваш</span>
+            </li>
+            <li class="contract-item reveal-up delay-3">
+              <div class="contract-check">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              </div>
+              <span>Оплата по расчётному счёту</span>
+            </li>
+            <li class="contract-item reveal-up delay-4">
+              <div class="contract-check">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              </div>
+              <span>Получение документов по ЭДО</span>
+            </li>
+            <li class="contract-item reveal-up delay-5">
+              <div class="contract-check">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              </div>
+              <span>Рассмотрим рассрочку и скидки</span>
+            </li>
+            <li class="contract-item reveal-up delay-5">
+              <div class="contract-check">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              </div>
+              <span>Доставка 1-3 дня при наличии на складах в ближайших городах</span>
+            </li>
+          </ul>
+
+          <div class="contract-cta reveal-up delay-5">
+            <a href="https://max.ru/u/f9LHodD0cOKFVbpw6TfSzIv_1p9dmQWYkxbe87RYJzcwBHFuoGFqae9gKU4" class="btn btn-primary" target="_blank" rel="noopener">
+              <img src="images/Логотип_MAX.svg" alt="MAX" class="max-logo-icon" width="20" height="20">
+              Написать в MAX
+            </a>
+            <a href="tel:+79655164927" class="btn btn-outline-dark">
+              +7 (965) 516-49-27
+            </a>
+          </div>
+        </div>
+
+        <div class="contract-visual reveal-right">
+          <div class="contract-stats">
+            <div class="stat-card">
+              <div class="stat-number" data-target="1">1</div>
+              <div class="stat-dash">—</div>
+              <div class="stat-number" data-target="3">3</div>
+              <div class="stat-label">дня доставка</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card">
+              <div class="stat-number">ЭДО</div>
+              <div class="stat-label">документы</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card">
+              <div class="stat-number">Опт</div>
+              <div class="stat-label">и розница</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== МАРКИ ===== -->
+  <section class="section section-light" id="brands">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Ассортимент</div>
+        <h2 class="section-title">Марки и техника</h2>
+        <p class="section-sub">Работаем с широким спектром грузовой и специальной техники</p>
+      </div>
+
+      <div class="brands-grid">
+
+        <div class="brand-badge reveal-up delay-1">
+          <div class="brand-icon"><span>К</span></div>
+          <div class="brand-name">КАМАЗ</div>
+        </div>
+
+        <div class="brand-badge reveal-up delay-1">
+          <div class="brand-icon"><span>М</span></div>
+          <div class="brand-name">МАЗ</div>
+        </div>
+
+        <div class="brand-badge reveal-up delay-2">
+          <div class="brand-icon"><span>У</span></div>
+          <div class="brand-name">Урал</div>
+        </div>
+
+        <div class="brand-badge reveal-up delay-2">
+          <div class="brand-icon"><span>У</span></div>
+          <div class="brand-name">УАЗ</div>
+        </div>
+
+        <div class="brand-badge reveal-up delay-3">
+          <div class="brand-icon"><span>Г</span></div>
+          <div class="brand-name">ГАЗ</div>
+        </div>
+
+        <div class="brand-badge reveal-up delay-3">
+          <div class="brand-icon"><span>К</span></div>
+          <div class="brand-name">КРАЗ</div>
+        </div>
+
+        <div class="brand-badge reveal-up delay-4">
+          <div class="brand-icon"><span>З</span></div>
+          <div class="brand-name">ЗИЛ</div>
+        </div>
+
+        <div class="brand-badge reveal-up delay-4">
+          <div class="brand-icon"><span>Т</span></div>
+          <div class="brand-name">Трактора</div>
+        </div>
+
+        <div class="brand-badge reveal-up delay-5">
+          <div class="brand-icon"><span>С</span></div>
+          <div class="brand-name">Спецтехника</div>
+        </div>
+
+        <div class="brand-badge reveal-up delay-5">
+          <div class="brand-icon"><span>В</span></div>
+          <div class="brand-name">Вездеходы</div>
+        </div>
+
+        <div class="brand-badge reveal-up delay-5">
+          <div class="brand-icon"><span>КГ</span></div>
+          <div class="brand-name">Китайские грузовики</div>
+        </div>
+
+      </div>
+
+      <div class="brands-note reveal-up">
+        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path stroke-linecap="round" d="M12 8v4m0 4h.01"/></svg>
+        <p>Под заказ привезём деталь на <strong>любой автомобиль</strong>, в том числе легковой</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== О НАС ===== -->
+  <section class="section section-medium" id="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Информация</div>
+        <h2 class="section-title">О нас</h2>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-card reveal-up delay-1">
+          <div class="about-card-icon">
+            <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="about-card-title">г. Нижняя Тура</h3>
+          <div class="about-card-address">ул. Малышева, 13</div>
+          <div class="about-schedule">
+            <div class="schedule-row">
+              <span class="schedule-days">Пн – Пт</span>
+              <span class="schedule-time">9:00 – 18:00</span>
+            </div>
+            <div class="schedule-row schedule-break">
+              <span class="schedule-days">Обед</span>
+              <span class="schedule-time">14:00 – 14:30</span>
+            </div>
+          </div>
+          <a href="tel:+79221562542" class="about-phone">+7 (922) 156-25-42</a>
+        </div>
+
+        <div class="about-card reveal-up delay-2">
+          <div class="about-card-icon">
+            <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="about-card-title">г. Качканар</h3>
+          <div class="about-card-address">ул. Крылова, д. 8<br><small>(здание автовокзала)</small></div>
+          <div class="about-schedule">
+            <div class="schedule-row">
+              <span class="schedule-days">Пн – Пт</span>
+              <span class="schedule-time">10:00 – 17:00</span>
+            </div>
+          </div>
+          <a href="tel:+79655384103" class="about-phone">+7 (965) 538-41-03</a>
+        </div>
+
+        <div class="about-card about-card-requisites reveal-up delay-3">
+          <div class="about-card-icon">
+            <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+          </div>
+          <h3 class="about-card-title">Реквизиты ИП</h3>
+          <p class="about-requisites-text">Скачайте карточку реквизитов для документооборота</p>
+          <a href="documents/requisites.pdf" download="Реквизиты_ГРУЗАВТО.pdf" class="btn btn-primary btn-sm">
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/>
+            </svg>
+            Скачать PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== СХЕМА ПРОЕЗДА ===== -->
+  <section class="section section-light" id="directions">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Как нас найти</div>
+        <h2 class="section-title">Схема проезда</h2>
+        <p class="section-sub">Фотографии входов и ориентиры для навигации</p>
+      </div>
+
+      <div class="directions-grid">
+
+        <div class="direction-card reveal-up delay-1">
+          <div class="direction-photo carousel" data-autoplay="5000">
+            <div class="carousel-track">
+              <img src="images/way/Тура/20260404_084920.jpg" alt="Вход — г. Нижняя Тура" loading="lazy">
+              <img src="images/way/Тура/20260404_085041.jpg" alt="Вход — г. Нижняя Тура" loading="lazy">
+            </div>
+            <div class="carousel-dots"></div>
+            <button class="carousel-btn carousel-prev" aria-label="Назад">&#10094;</button>
+            <button class="carousel-btn carousel-next" aria-label="Вперёд">&#10095;</button>
+          </div>
+          <div class="direction-info">
+            <h3>г. Нижняя Тура</h3>
+            <p>ул. Малышева, 13</p>
+            <a href="tel:+79221562542" class="direction-phone">+7 (922) 156-25-42</a>
+          </div>
+        </div>
+
+        <div class="direction-card reveal-up delay-2">
+          <div class="direction-photo carousel" data-autoplay="5000">
+            <div class="carousel-track">
+              <img src="images/way/Качканар/20260408_120049.jpg" alt="Вход — г. Качканар" loading="lazy">
+              <img src="images/way/Качканар/20260408_120407.jpg" alt="Вход — г. Качканар" loading="lazy">
+              <img src="images/way/Качканар/20260408_120429.jpg" alt="Вход — г. Качканар" loading="lazy">
+            </div>
+            <div class="carousel-dots"></div>
+            <button class="carousel-btn carousel-prev" aria-label="Назад">&#10094;</button>
+            <button class="carousel-btn carousel-next" aria-label="Вперёд">&#10095;</button>
+          </div>
+          <div class="direction-info">
+            <h3>г. Качканар</h3>
+            <p>ул. Крылова, д. 8 (здание автовокзала)</p>
+            <a href="tel:+79655384103" class="direction-phone">+7 (965) 538-41-03</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">ГРУЗ<span>АВТО</span></div>
+          <p class="footer-slogan">Быстро привезём, точно подберём</p>
+          <p class="footer-cities">г. Нижняя Тура · г. Качканар</p>
+        </div>
+
+        <div class="footer-contacts">
+          <div class="footer-contact-group">
+            <div class="footer-contact-label">Заказ запчастей</div>
+            <a href="tel:+79193624471" class="footer-phone">+7 (919) 362-44-71</a>
+            <a href="https://max.ru/u/f9LHodD0cOKFVbpw6TfSzIv_1p9dmQWYkxbe87RYJzcwBHFuoGFqae9gKU4" class="footer-max" target="_blank" rel="noopener">MAX</a>
+          </div>
+          <div class="footer-contact-group">
+            <div class="footer-contact-label">Заключение договора</div>
+            <a href="tel:+79655164927" class="footer-phone">+7 (965) 516-49-27</a>
+            <a href="https://max.ru/u/f9LHodD0cOKFVbpw6TfSzIv_1p9dmQWYkxbe87RYJzcwBHFuoGFqae9gKU4" class="footer-max" target="_blank" rel="noopener">MAX</a>
+          </div>
+          <div class="footer-contact-group">
+            <div class="footer-contact-label">Email</div>
+            <a href="mailto:gruzavto_nt@mail.ru" class="footer-email">gruzavto_nt@mail.ru</a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <nav>
+            <a href="#availability">Наличие</a>
+            <a href="#order">Заказ</a>
+            <a href="#contract">Договор</a>
+            <a href="#brands">Марки</a>
+            <a href="#about">О нас</a>
+            <a href="#directions">Схема проезда</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 ГРУЗАВТО. Магазин грузовых автозапчастей.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating call button (mobile) -->
+  <a href="tel:+79193624471" class="float-call" aria-label="Позвонить">
+    <svg width="26" height="26" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+  </a>
+
+  <!-- Lightbox -->
+  <div class="lightbox-overlay" id="lightbox">
+    <button class="lightbox-close" aria-label="Закрыть">&times;</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Назад">&#10094;</button>
+    <img src="" alt="">
+    <button class="lightbox-nav lightbox-next" aria-label="Вперёд">&#10095;</button>
+    <div class="lightbox-counter"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
