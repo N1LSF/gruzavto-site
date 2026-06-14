@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /documents/
+
+Sitemap: https://грузавто.site/sitemap.xml
